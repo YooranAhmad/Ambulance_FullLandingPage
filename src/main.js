@@ -1,24 +1,27 @@
 import './style.css'
 
-// Add scroll reveal effect
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
+// Advanced Scroll Reveal using Intersection Observer for better performance
+const revealSettings = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const revealCallback = (entries, observer) => {
+  entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('opacity-100', 'translate-y-0')
-      entry.target.classList.remove('opacity-0', 'translate-y-10')
+      entry.target.classList.add('active');
+      // Uncomment below if you only want animations to fire once
+      // observer.unobserve(entry.target);
     }
-  })
-}, {
-  threshold: 0.1
-})
+  });
+};
 
-// Initialize layout animations
+const revealObserver = new IntersectionObserver(revealCallback, revealSettings);
+
+// Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('main > div, main > h1, main > p')
-  sections.forEach((section) => {
-    section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10')
-    observer.observe(section)
-  })
+  const revealElements = document.querySelectorAll('.reveal');
+  revealElements.forEach(el => revealObserver.observe(el));
 
-  console.log('LifeLine Portal Initialized')
-})
+  console.log('BORCELLE Animation Engine Started');
+});
