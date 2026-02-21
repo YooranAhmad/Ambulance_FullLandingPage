@@ -53,114 +53,251 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-12 pb-24 md:pt-24 md:pb-32 overflow-hidden">
-      <div class="container mx-auto px-4">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mt-24 ">
-          <div class="relative z-10">
-            <div
-              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-bold text-sm mb-6">
-              <span class="relative flex h-3 w-3">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
-              </span>
-              24/7 EMERGENCY SERVICE
-            </div>
-            <h1 class="text-4xl md:text-6xl font-extrabold text-secondary leading-[1.1] mb-6">
-              Trusted Emergency Care, <span class="text-primary">Day or Night</span>
-            </h1>
-            <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-xl">
-              When seconds count, count on Borcelle. Our state-of-the-art facility provides immediate, compassionate
-              care with rapid ambulance response times.
-            </p>
-            <div class="flex flex-col items-start gap-6">
+    <section class="relative flex items-center justify-center pt-32 pb-20 bg-white overflow-hidden">
+      <div class="relative z-10 w-full max-w-6xl px-4">
+        <div class="relative flex justify-center">
+          <!-- Image with reduced blending masks -->
+          <div class="relative mask-radial-fade group">
+            <img src="src/assets/poster_ambulance.png" alt="Emergency Service" class="max-w-full h-auto rounded-3xl">
+
+            <!-- Centered Call Button -->
+            <div class="absolute inset-0 flex items-center justify-center top-110">
               <a href="tel:+2348035555555"
-                class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border border-primary-border min-h-11 h-16 px-10 text-xl bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 rounded-2xl transition-all hover:scale-105 active:scale-95">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-phone w-5 h-5">
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.06-6.06 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                  </path>
-                </svg>
-                Call Ambulance
+                class="bg-gradient-to-r from-secondary to-[#2a70d4] hover:brightness-110 text-white px-10 py-5 text-2xl font-black uppercase tracking-widest transform transition-all hover:scale-110 active:scale-95 flex items-center justify-center gap-4 z-20 w-140 h-25">
+                <div class="flex flex-col items-center p-2 gap-2">
+                  <p class="text-white/90 text-md font-light uppercase tracking-tight">Call Us</p>
+                  <h1 class="text-white text-3xl font-light uppercase tracking-tight">(+62) 083-555-5555</h1>
+                </div>
               </a>
-
-              <div class="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm font-semibold text-gray-500">
-                <div class="flex items-center gap-2.5">
-                  <div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide lucide-shield-check w-4 h-4">
-                      <path
-                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                      </path>
-                      <path d="m9 12 2 2 4-4"></path>
-                    </svg>
-                  </div>
-                  <span>Licensed Medical Pros</span>
-                </div>
-
-                <div class="flex items-center gap-2.5">
-                  <div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide lucide-clock w-4 h-4">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                  </div>
-                  <span>Always Open</span>
-                </div>
-              </div>
             </div>
 
-          </div>
-          <div class="relative group mt-10">
-            <!-- Hexagon Badge -->
+            <!-- Additional bottom fade (Shorter) -->
             <div
-              class="absolute -top-12 -left-12 w-48 h-40 bg-secondary shadow-2xl clip-path-hexagon z-30 transform hover:rotate-3 transition-transform duration-500 group-hover:scale-105">
-              <div
-                class="absolute inset-2 bg-secondary border-2 border-white/10 clip-path-hexagon flex flex-col items-center justify-center p-4">
-
-                <!-- Icon and 24/7 Header -->
-                <div class="flex items-center gap-2 mb-1">
-                  <div
-                    class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary-foreground">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="animate-pulse" viewBox="0 0 16 16">
-                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
-                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
-                    </svg>
-                  </div>
-                  <span class="text-4xl font-black text-white tracking-tighter">24/7</span>
-                </div>
-
-                <!-- Main Text -->
-                <div class="flex flex-col items-center">
-                  <span class="text-primary font-black text-xl uppercase tracking-widest">Always</span>
-                  <span class="text-white font-bold text-2xl uppercase tracking-tight -mt-1">On Call</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Image Container -->
-            <div
-              class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-video lg:aspect-auto lg:h-[700px] z-10">
-              <img src="/src/assets/ambulanceposter.jpg" alt="Ambulance"
-                class="absolute inset-0 w-full h-full object-cover">
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-secondary/60 via-transparent to-primary/20 pointer-events-none">
-              </div>
+              class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none">
             </div>
           </div>
-
-
         </div>
       </div>
     </section>
 
-  </div>
-  <script type="module" src="/src/main.js"></script>
+    <!-- Why Us -->
+    <section id="why-us" class="py-24 bg-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-black text-secondary tracking-tight mb-16 uppercase">Why Choose Borcelle?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div
+            class="group p-8 rounded-3xl border border-gray-100 bg-white shadow-soft transition-all hover:-translate-y-2">
+            <div
+              class="w-16 h-16 bg-secondary/5 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-secondary mb-4">24/7 Availability</h3>
+            <p class="text-gray-500 leading-relaxed text-sm">Emergency services active round-the-clock. We never close,
+              because emergencies don't wait.</p>
+          </div>
+          <div
+            class="group p-8 rounded-3xl border border-gray-100 bg-white shadow-soft transition-all hover:-translate-y-2">
+            <div
+              class="w-16 h-16 bg-secondary/5 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-secondary mb-4">Expert Team</h3>
+            <p class="text-gray-500 leading-relaxed text-sm">Our paramedics and doctors are licensed specialists in
+              trauma and critical emergency care.</p>
+          </div>
+          <div
+            class="group p-8 rounded-3xl border border-gray-100 bg-white shadow-soft transition-all hover:-translate-y-2">
+            <div
+              class="w-16 h-16 bg-secondary/5 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-secondary mb-4">Modern Fleet</h3>
+            <p class="text-gray-500 leading-relaxed text-sm">Equipped with the latest life-support technology and rapid
+              traffic-routing systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="py-24 bg-white border-t border-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-black text-center text-secondary tracking-tight mb-16 uppercase">Patient Reviews</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="p-8 rounded-3xl bg-gray-50 border border-transparent hover:border-secondary/10 transition-all">
+            <div class="flex gap-1 mb-4 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <p class="text-gray-600 mb-6 font-medium">"Unbelievable response time. They were at my door in under 10
+              minutes. The care I received was professional and life-saving."</p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center font-bold text-secondary text-xs">
+                JD</div>
+              <div>
+                <h4 class="text-sm font-bold text-secondary">John Doe</h4>
+                <p class="text-[10px] text-gray-400">Emergency Call</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 rounded-3xl bg-gray-50 border border-transparent hover:border-secondary/10 transition-all">
+            <div class="flex gap-1 mb-4 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <p class="text-gray-600 mb-6 font-medium">"The medical staff were expertly trained and helped stabilized my
+              father during the ride. Modern and clean ambulance."</p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center font-bold text-secondary text-xs">
+                AS</div>
+              <div>
+                <h4 class="text-sm font-bold text-secondary">Aria Sterling</h4>
+                <p class="text-[10px] text-gray-400">Stable Patient</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 rounded-3xl bg-gray-50 border border-transparent hover:border-secondary/10 transition-all">
+            <div class="flex gap-1 mb-4 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <p class="text-gray-600 mb-6 font-medium">"Top-tier service. The dispatch was very clear and the team found
+              our remote location with no issues."</p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center font-bold text-secondary text-xs">
+                MK</div>
+              <div>
+                <h4 class="text-sm font-bold text-secondary">Marcus Kane</h4>
+                <p class="text-[10px] text-gray-400">Satisfied Client</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section id="promo" class="py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="bg-secondary rounded-[3rem] p-12 text-center text-white relative overflow-hidden shadow-2xl">
+          <!-- Decorative circle -->
+          <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/5 rounded-full"></div>
+          <div class="absolute -bottom-12 -left-12 w-48 h-48 bg-white/5 rounded-full"></div>
+
+          <h2 class="text-3xl md:text-5xl font-black mb-6 tracking-tight uppercase">Ready for Peace of Mind?</h2>
+          <p class="text-white/80 text-lg mb-10 max-w-2xl mx-auto">Sign up for our <span
+              class="text-white font-bold">Priority
+              Patient Program</span> and get 20% off your first emergency transport subscription.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#"
+              class="px-8 py-4 bg-white text-secondary font-black rounded-2xl hover:bg-gray-100 transition-all uppercase tracking-widest text-sm">Join
+              Program</a>
+            <a href="tel:+2348035555555"
+              class="px-8 py-4 border border-white/30 text-white font-black rounded-2xl hover:bg-white/10 transition-all uppercase tracking-widest text-sm">Contact
+              Support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-secondary rounded-xl flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-heart-pulse">
+                <path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" />
+              </svg>
+            </div>
+            <span class="text-xl font-black text-secondary tracking-tighter">BORCELLE</span>
+          </div>
+
+          <div class="flex gap-8 text-sm font-bold text-gray-400 uppercase tracking-widest">
+            <a href="#" class="hover:text-secondary transition-colors">Privacy</a>
+            <a href="#" class="hover:text-secondary transition-colors">Terms</a>
+            <a href="#" class="hover:text-secondary transition-colors">Contact</a>
+          </div>
+
+          <p class="text-gray-400 text-xs">© 2026 BORCELLE Emergency Dept. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
